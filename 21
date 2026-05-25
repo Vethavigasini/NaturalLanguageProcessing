@@ -1,0 +1,15 @@
+word_tag_prob = {
+    "I": "PRP",
+    "eat": "VBP",
+    "rice": "NN",
+    "quickly": "RB"
+}
+
+sentence = ["I", "eat", "rice", "quickly"]
+tagged = []
+
+for word in sentence:
+    tag = word_tag_prob.get(word, "NN")
+    tagged.append((word, tag))
+
+print(tagged)
